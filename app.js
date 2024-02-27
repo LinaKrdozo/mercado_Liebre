@@ -5,9 +5,13 @@ const path = require('path');
 //funcion estatica
 app.use(express.static(path.resolve(__dirname, './public')));
 
-app.listen(3000,()=>{
-    console.log('servidor corriendo')
-})
+//levantar nuestro servidor
+const port= process.env.PORT || 3000;
+app.listen(port,()=>console.log("Servidor corriendo en el puerto" + port));
+
+//app.listen(3000,()=>{
+  //  console.log('servidor corriendo')
+//})
 
 app.get('/', (req, res)=>{
     res.sendFile(path.join(__dirname, '/views/home.html'))
