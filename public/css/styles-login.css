@@ -1,0 +1,451 @@
+*{
+    box-sizing: border-box;
+    font-family: roboto;
+    padding: 0;
+    margin: 0px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+.encabezado__logoBuscador{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.encabezado__logoBuscador input{
+    width: 50%;
+    height: 25px;
+    font-size: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+   
+}
+
+.boton-buscador{
+    position: absolute;
+    background-color: #FFF;
+    width: 30px;
+    height: 23px;
+    padding: 7px 2px;
+    border: 0;
+    top: 0;
+    bottom: 28%;
+    right: 10px;
+    margin: auto;
+    color: #666;
+    border-radius: 5px;
+}
+
+.logo{
+  width: 50%;  
+  padding: 10px;
+  padding-bottom: 0px;
+  
+}
+
+.encabezado-inicial{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    font-weight: lighter;
+
+}
+
+.encabezado-inicial i{
+    padding-right: 5px;
+}
+
+.menu-header{
+    display: none;
+}
+.menu-navegacion, 
+.menu-cuenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px;  
+}
+
+.menu-navegacion a{
+    display: flex;
+    text-decoration: none;
+    color:black ;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.menu-cuenta a{
+    color:black;
+    text-decoration: none;
+    right: 10px;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.menu-cuenta i{
+    padding-left: 5px;
+}
+
+.menu-hamburguesa {
+
+    background-color:#1259c3;
+    color: white;
+    width: 30px;
+    border-radius: 5px;
+    margin:auto;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+/*seccion main*/
+main{
+    background-color: #e9f0ef;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+}
+
+.formulario-Login{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 1px #e9f0ef;
+    padding: 10px;
+    padding-left: 10px;
+    text-align: center;
+    margin: auto;
+    margin-top: 22px;
+    width: 90%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(223, 223, 223, 0.341);
+    
+}
+
+.formularioLogin__titulo{
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.formularioLogin__subtitulos input{
+    border: none;
+    background: #e9f0ef;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    border-radius: 7px;
+    text-align: justify;
+
+}
+
+.formularioLogin__botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 15px;
+    margin-left: 68px;
+}
+
+.formularioLogin__botones button{
+    background-color: #1259c3;
+    width: 40%;
+    height: 30px;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    border: none;
+}
+
+button:hover{
+    background-color: #0022AA;
+}
+
+.formularioLogin__botones button a{
+    color: white;
+    text-decoration: none;
+}
+
+.formularioLogin__parrafo a{
+    color: black;
+    padding: 10px;
+}
+
+
+/*footer*/
+
+footer{
+    font-size: 12px;
+
+}
+
+.footer__Seccion1{
+    text-align: center;
+    padding: 20px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__Seccion1 i{
+    color:#1259c3;
+    font-size: 30px;
+    padding: 5px;
+   
+}
+
+.footer__seccion2{
+    padding: 30px;
+    text-align: left;
+}
+
+.seccion1__pagos{
+    padding: 4px;
+}
+
+@media(min-width: 503px){
+    .logo{
+        width: 16%;
+    }
+
+    .encabezado__logoBuscador{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        flex-wrap: nowrap;
+        
+    }
+    .logo{
+        width: 30%;  
+        padding: 10px;
+        padding-bottom: 0px;
+    }
+
+    .encabezado__logoBuscador input{
+        width: 33%;
+        height: 20px;
+        font-size: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: none;
+    }
+    .boton-buscador{
+        position: absolute;
+        background-color: #FFF;
+        width: 21px;
+        height: 19px;
+        padding: 4px 2px;
+        border: 0;
+        top: 38%;
+        bottom: 28%;
+        left: 17%;
+        margin: auto;
+        color: #666;
+        border-radius: 5px;
+    }
+
+    .encabezado-inicial{
+        font-size: 11px;
+        padding: 4px 0px;
+        font-weight: lighter;
+        margin: auto;
+        margin-left: 39px;
+        margin-top: 23px;
+    
+    }
+
+    .menu-header{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-navegacion, 
+    .menu-cuenta{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 3px;  
+    }
+
+    .menu-navegacion a{
+        
+        text-decoration: none;
+        color:black ;
+        font-size: 11px;
+        margin: 5px;
+    }
+
+    .menu-cuenta a{
+        display: flex;
+        color:black;
+        text-decoration: none;
+        right: 10px;
+        font-size: 11px;
+        justify-content: space-between;
+        padding: 1px;
+        margin: 4px;
+    }
+    
+    .menu-hamburguesa{
+        display: none;
+    }
+
+    /*main*/
+    .formulario-Login{
+        width: 60%;
+    }
+    
+}
+
+@media(min-width: 889px){
+    .logo{
+        width: 25%;
+    }
+    .encabezado__logoBuscador{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        flex-wrap: nowrap;
+        
+    }
+    .encabezado__logoBuscador input{
+        width: 30%;
+        height: 30px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-top: 12px;
+        border: none;
+        padding: 11px;
+        margin-left: 60px;
+    }
+    .boton-buscador{
+        position: absolute;
+        background-color: #FFF;
+        width: 21px;
+        height: 19px;
+        padding: 4px 2px;
+        border: 0;
+        top: 38%;
+        bottom: 28%;
+        left: 15%;
+        margin: auto;
+        color: #666;
+        border-radius: 5px;
+    }
+    .encabezado-inicial{
+        font-size: 17px;
+        padding: 4px 0px;
+        font-weight: lighter;
+        margin: auto;
+        margin-right: 97px;
+        margin-top: 34px;
+    
+    }
+
+    .menu-header{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .menu-navegacion a{
+        text-decoration: none;
+        color:black ;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .menu-cuenta a{
+        color:black;
+        text-decoration: none;
+        right: 10px;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .menu-hamburguesa{
+        display: none;
+    }
+    /*main*/
+    .formulario-Login{
+        width: 30%;
+    }
+
+    .formularioLogin__botones{
+        margin-left: 89px;
+    }
+
+    .formularioLogin__parrafo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formularioLogin__parrafo a{
+        padding-right: 20px;
+    }
+
+    /*footer*/
+    .footer__Seccion1{
+        text-align: center;
+        padding: 20px;
+        margin: 25px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__Seccion1 i{
+        color:#1259c3;
+        font-size: 30px;
+
+    }
+    
+    .footer__seccion2{
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .seccion1__pagos{
+        padding: 4px;
+    }
+
+    .seccion1__envios{
+        padding: 4px;
+    }
+
+    .seccion1__devoluciones{
+        padding: 4px;
+    }
+
+    
+}

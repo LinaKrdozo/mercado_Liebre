@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles-registro.css">
+    <title>Mercado Liebre</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class="encabezado__logoBuscador">
+            <img class="logo" src="./images/logo-mercado-liebre.svg" alt="">
+            <i class="fa-regular fa-circle-question"></i>
+        </section>
+    </header>
+
+    <main>
+        <form action="/crear-usuario" method="post" class="formulario-registro">
+            <label class="formularioRegistro__titulo">Formulario de registro</label><br>
+            <section class="formularioRegistro">
+        
+                    <label class="formularioRegistro__subtitulos">
+                        <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    </label>
+                
+                    <label class="formularioRegistro__subtitulos">
+                        <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+                    </label> 
+
+                    <label for="email" class="formularioRegistro__subtitulos">
+                        <input type="email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required>
+                    </label>
+            
+                    <label for="fecha" class="formularioRegistro__subtitulos">
+                        <h4>Fecha de nacimiento</h4>
+                        <input type="date" name="fecha" required>
+                    </label>   
+
+                    <label for="direccion" class="formularioRegistro__subtitulos">
+                        <input type="text" name="direccion" placeholder="Domicilio" required>
+                    </label>
+
+                    <label class="formularioRegistro__subtitulos">
+                        <h4>Perfil del usuario</h4>
+                        <section class="formularioRegistro__subtitulos--opciones">
+                            <label for="tipoUsuario">Comprador</label>
+                            <input type="radio" name="perfil" value="comprar">
+                            <label for="tipoUsuario">Vendedor</label>
+                            <input type="radio" name="perfil" value="vender">
+                        </section>
+                    </label><br>
+                
+                    <label class="formularioRegistro__subtitulos">
+                        <section class="formularioRegistro__subtitulos--categorias">
+                            <h4>Categorías de interés</h4><br>
+                            <select name="categorias">
+                                <option value="electro">Electro</option>
+                                <option value="moda">Moda</option>
+                                <option value="hogar">Hogar</option>
+                                <option value="jugueteria">Juguetería</option>
+                                <option value="saludable">Vida sana</option>
+                            </select>
+                        </section>
+                        
+                    </label><br>
+                
+                    <label for="foto" class="formularioRegistro__subtitulos">
+                        <br><h4>Foto de usuario</h4>
+                        <input type="file" name="foto" accept=".jpg" multiple required>
+                    </label>
+
+                    <label for="contraseña" class="formularioRegistro__subtitulos">
+                        <input type="password" name="contraseña" placeholder="Contraseña" required>
+                    </label>
+                
+                    <label for="confirmacionContraseña" class="formularioRegistro__subtitulos">
+                        <input type="password" name="confirmacionContraseña" placeholder="Confirma tu contraseña" required>
+                    </label>
+
+                    <section class="formularioRegistro__botones">
+                        <button type="submit"><a href="/">Enviar</a></button><br>
+                        <button type="reset">Borrar</button>
+                    </section>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        
+        <h3 class="footer__seccion2">Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        
+    </footer>
+</body>
+</html>
