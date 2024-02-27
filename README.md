@@ -7,7 +7,7 @@
 - CSS3
 - nodeJs
   
-### 🚀 Requerimientos 
+### 📝 Requerimientos 
 ```
  node==20.10.0
  npm==10.2.4
@@ -28,3 +28,6 @@ para ejecutar el proyecto en local:
    ```
     node app.js
    ```
+### 🚀 link deploy
+https://mercado-liebre-ducg.onrender.com/
+
