@@ -230,7 +230,7 @@ footer{
         
     }
     .logo{
-        width: 30%;  
+        width: 76%;  
         padding: 10px;
         padding-bottom: 0px;
     }
@@ -315,7 +315,7 @@ footer{
 
 @media(min-width: 889px){
     .logo{
-        width: 25%;
+        width: 100%;
     }
     .encabezado__logoBuscador{
         display: flex;
